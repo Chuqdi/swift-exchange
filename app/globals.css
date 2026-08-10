@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0a0a0d;
+  color: #f6f1e9;
+}
+
+::selection {
+  background-color: #ff5a1f;
+  color: #0a0a0d;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0d;
+}
+::-webkit-scrollbar-thumb {
+  background: #28262e;
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3a3742;
+}
+
+:focus-visible {
+  outline: 2px solid #ff8a3d;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Chat-bubble notch used as the site's recurring signature shape */
+.chat-notch {
+  position: relative;
+}
+.chat-notch::after {
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  left: 28px;
+  width: 16px;
+  height: 16px;
+  background: inherit;
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}

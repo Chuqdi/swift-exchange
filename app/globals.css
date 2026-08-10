@@ -1039,3 +1039,10 @@ footer {
     height: 300px;
   }
 }
+
+
+@media (max-width: 720px) {
+  .nav-cta {
+    display: none;
+  }
+}

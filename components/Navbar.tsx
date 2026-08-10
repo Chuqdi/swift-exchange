@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, MessageCircle } from "lucide-react";
-import { waLink } from "..//lib/data";
+import { waLink } from "../lib/data";
 
 const LINKS = [
   { href: "#why", label: "Why SwiftExchange" },
@@ -41,7 +41,7 @@ export default function Navbar() {
           </span>
         </a>
 
-        <div className="hidden md:flex items-center gap-8">
+        {/* <div className="hidden md:flex items-center gap-8">
           {LINKS.map((l) => (
             <a
               key={l.href}
@@ -51,7 +51,7 @@ export default function Navbar() {
               {l.label}
             </a>
           ))}
-        </div>
+        </div> */}
 
         <div className="flex items-center gap-3">
           <a

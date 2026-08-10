@@ -1,42 +1,43 @@
-import type { Metadata } from "next";
-import { Space_Grotesk, Inter, JetBrains_Mono } from "next/font/google";
-import "./globals.css";
+import type { Metadata } from 'next';
+import { Fraunces, Plus_Jakarta_Sans, Space_Mono } from 'next/font/google';
+import './globals.css';
+import { WingGradientDefs } from '../components/icons/WingIcon';
 
-const display = Space_Grotesk({
-  subsets: ["latin"],
-  weight: ["500", "600", "700"],
-  variable: "--font-display",
-  display: "swap",
+
+
+const fraunces = Fraunces({
+  subsets: ['latin'],
+  variable: '--font-fraunces',
+  weight: ['500', '600', '700', '900'],
+  style: ['normal', 'italic'],
+  display: 'swap',
 });
 
-const body = Inter({
-  subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  variable: "--font-body",
-  display: "swap",
+const jakarta = Plus_Jakarta_Sans({
+  subsets: ['latin'],
+  variable: '--font-jakarta',
+  weight: ['400', '500', '600', '700', '800'],
+  display: 'swap',
 });
 
-const mono = JetBrains_Mono({
-  subsets: ["latin"],
-  weight: ["400", "500"],
-  variable: "--font-mono",
-  display: "swap",
+const spaceMono = Space_Mono({
+  subsets: ['latin'],
+  variable: '--font-space-mono',
+  weight: ['400', '700'],
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
-  title: "SwiftExchange | Trade Crypto on WhatsApp",
+  title: 'SwiftExchange — Trade Crypto in Real Time on WhatsApp',
   description:
-    "SwiftExchange connects you to a real trader on WhatsApp for fast, secure crypto swaps. No app, no order book \u2014 just chat, quote, and trade.",
+    'SwiftExchange is a registered crypto trading desk. Every trade happens one-on-one on WhatsApp — fast, secure and available 24/7.',
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${display.variable} ${body.variable} ${mono.variable}`}>
-      <body className="font-body bg-ink-950 text-paper-100 antialiased">
+    <html lang="en" className={`${fraunces.variable} ${jakarta.variable} ${spaceMono.variable}`}>
+      <body>
+        <WingGradientDefs />
         {children}
       </body>
     </html>

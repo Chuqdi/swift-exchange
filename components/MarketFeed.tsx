@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowUpRight, ArrowDownRight, Radio } from "lucide-react";
 import SectionHeading from "./SectionHeading";
-import { COINS, waLink } from "@/lib/data";
+import { COINS, waLink } from "../lib/data";
 
 type PriceInfo = {
   usd: number;

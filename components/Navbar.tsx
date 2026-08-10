@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, MessageCircle } from "lucide-react";
-import { waLink } from "@/lib/data";
+import { waLink } from "..//lib/data";
 
 const LINKS = [
   { href: "#why", label: "Why SwiftExchange" },

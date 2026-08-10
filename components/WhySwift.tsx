@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { MessageCircle, Zap, ShieldCheck, type LucideIcon } from "lucide-react";
 import SectionHeading from "./SectionHeading";
-import { WHY_CARDS } from "@/lib/data";
+import { WHY_CARDS } from "../lib/data";
 
 const ICONS: Record<string, LucideIcon> = {
   MessageCircle,

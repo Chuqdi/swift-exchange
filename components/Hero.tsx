@@ -29,9 +29,9 @@ export function Hero() {
             Think <span className="grad-text">Fast,</span> Think <span className="grad-text">Reliable</span>
           </Reveal>
 
-          <Reveal as="p" className="sub">
+          {/* <Reveal as="p" className="sub">
             Click here to get started.
-          </Reveal>
+          </Reveal> */}
 
           <Reveal className="hero-ctas">
             <a className="btn btn-primary pulse" href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer">

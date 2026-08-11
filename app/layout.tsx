@@ -33,7 +33,11 @@ export const metadata: Metadata = {
   title: 'SwiftExchange — Trade Crypto in Real Time on WhatsApp',
   description:
     'SwiftExchange is a registered crypto trading desk. Every trade happens one-on-one on WhatsApp — fast, secure and available 24/7.',
+    verification: {
+    google: 'S1Wn5jWpYydtBHtxv3tRLK8OqVkBtOSJPKytI_q6UuU',
+  },
 };
+
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (

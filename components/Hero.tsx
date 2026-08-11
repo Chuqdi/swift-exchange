@@ -26,7 +26,7 @@ export function Hero() {
           </Reveal>
 
           <Reveal as="h1">
-            Trade in real time with our <span className="grad-text">24/7 online trader</span>.
+            Think <span className="grad-text">Fast,</span> Think <span className="grad-text">Reliable</span>
           </Reveal>
 
           <Reveal as="p" className="sub">

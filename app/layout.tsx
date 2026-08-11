@@ -1,15 +1,17 @@
 import type { Metadata } from 'next';
-import { Fraunces, Plus_Jakarta_Sans, Space_Mono } from 'next/font/google';
+// import { Fraunces, Plus_Jakarta_Sans, Space_Mono } from 'next/font/google';
+import { Inter, Plus_Jakarta_Sans, DM_Sans } from 'next/font/google';
+//@ts-ignore
 import './globals.css';
 import { WingGradientDefs } from '../components/icons/WingIcon';
 
 
 
-const fraunces = Fraunces({
+const fraunces = Inter({
   subsets: ['latin'],
   variable: '--font-fraunces',
   weight: ['500', '600', '700', '900'],
-  style: ['normal', 'italic'],
+  style: ['normal', ],
   display: 'swap',
 });
 
@@ -20,7 +22,7 @@ const jakarta = Plus_Jakarta_Sans({
   display: 'swap',
 });
 
-const spaceMono = Space_Mono({
+const spaceMono = DM_Sans({
   subsets: ['latin'],
   variable: '--font-space-mono',
   weight: ['400', '700'],

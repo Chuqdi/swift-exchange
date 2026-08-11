@@ -1,4 +1,5 @@
 import { NAV_LINKS, WHATSAPP_LINK } from "../lib/constants";
+import ZoomableImage from "./ZoomableImage";
 
 export function Footer() {
   return (
@@ -44,7 +45,13 @@ export function Footer() {
           <div className="foot-col">
             <h4>Registered Business</h4>
             <div className="cac-box">
-              <img src="/assets/certificate.jpg" alt="CAC Certificate of Registration" width={52} height={68} />
+
+              <ZoomableImage
+                src="/assets/certificate.jpg"
+                alt="CAC Certificate of Registration"
+                width={52} 
+                height={68}
+              />
               <div className="t">
                 <b>Swiftsale Services</b>
                 CAC Reg. No. 3647700
